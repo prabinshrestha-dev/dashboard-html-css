@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo-container">
+            <span class="logo-text">SHOPIFY</span>
+        </div>
+        
+        <nav class="navbar">
+            <div class="search-wrapper">
+                <input type="text" placeholder="Search for products or orders..." class="search-input">
+            </div>
+            
+            <div class="nav-controls">
+                <div class="notification-wrapper">
+                    <span class="nav-label">Notifications</span>
+                    <span class="badge">3</span>
+                </div>
+                <div class="profile-wrapper">
+                    <div class="profile-avatar"></div>
+                    <span class="profile-name">Admin User</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="layout-wrapper">
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-item active">Dashboard </li>
+                <li class="sidebar-item">Product </li>
+                <li class="sidebar-item">Order Management</li>
+                <li class="sidebar-item">Customer </li>
+                <li class="sidebar-item"> Tools</li>
+                <li class="sidebar-item"> Settings</li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="dashboard-header">
+                <h1>Analytics Dashboard</h1>
+                <p>Monitor your sales performance and store health.</p>
+            </div>
+
+            <!-- Analytics Analytics Cards -->
+            <div class="analytics-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Total Revenue</span>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="stat-value">$128,430.00</h2>
+                        <p class="stat-trend positive">+15.4% from last month</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Average Order Value</span>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="stat-value">$84.50</h2>
+                        <p class="stat-trend positive">+2.1% from last month</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table related to analytics -->
+            <section class="data-section">
+                <div class="section-card">
+                    <h3 class="section-title">Recent Transactions</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Product Name</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#ORD-9901</td>
+                                <td>Mechanical Keyboard</td>
+                                <td>Oct 12, 2023</td>
+                                <td><span class="status-pill success">Delivered</span></td>
+                                <td>$120.00</td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-9902</td>
+                                <td>USB-C Docking Station</td>
+                                <td>Oct 12, 2023</td>
+                                <td><span class="status-pill warning">Pending</span></td>
+                                <td>$89.00</td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-9903</td>
+                                <td>Wireless Mouse</td>
+                                <td>Oct 11, 2023</td>
+                                <td><span class="status-pill success">Delivered</span></td>
+                                <td>$45.00</td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-9904</td>
+                                <td>Gaming Monitor</td>
+                                <td>Oct 11, 2023</td>
+                                <td><span class="status-pill error">Cancelled</span></td>
+                                <td>$350.00</td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-9905</td>
+                                <td>Laptop Stand</td>
+                                <td>Oct 10, 2023</td>
+                                <td><span class="status-pill success">Delivered</span></td>
+                                <td>$25.00</td>
+                            </tr>
+                            <!-- Duplicate data to ensure scrolling functionality -->
+                            <tr>
+                                <td>#ORD-9906</td>
+                                <td>Hard Drive 2TB</td>
+                                <td>Oct 10, 2023</td>
+                                <td><span class="status-pill success">Delivered</span></td>
+                                <td>$110.00</td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-9907</td>
+                                <td>Webcam 1080p</td>
+                                <td>Oct 09, 2023</td>
+                                <td><span class="status-pill warning">Pending</span></td>
+                                <td>$65.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
