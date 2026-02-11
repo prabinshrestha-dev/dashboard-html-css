@@ -1,0 +1,31 @@
+.sidebar {
+    width: var(--sidebar-width);
+    background: #ffffff;
+    border-right: 1px solid var(--border-color);
+    padding-top: 20px;
+    height: 100%;
+}
+
+.sidebar-list {
+    list-style: none;
+}
+
+.sidebar-item {
+    padding: 15px 25px;
+    font-size: 0.95rem;
+    color: var(--text-gray);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.sidebar-item:hover {
+    background: #f1f5f9;
+    color: var(--primary-blue);
+}
+
+.sidebar-item.active {
+    background: #eff6ff;
+    color: var(--primary-blue);
+    font-weight: 600;
+    border-right: 3px solid var(--primary-blue);
+}
